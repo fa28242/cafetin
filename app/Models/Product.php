@@ -7,5 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    
+     // propiedad para decirle que campos viajan a la base de datos
+     protected $fillable =
+     [
+         'name',
+         'references',
+         'price',
+         'weight',
+         'stock',
+         'category_id'
+     ];
+    
     use HasFactory;
 }
